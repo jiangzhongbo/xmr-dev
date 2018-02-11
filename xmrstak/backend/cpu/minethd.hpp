@@ -47,7 +47,7 @@ private:
 	void penta_work_main();
 
 	void six_work_main();
-	
+	void seven_work_main();
 	void consume_work();
 
 	uint64_t iJobNo;

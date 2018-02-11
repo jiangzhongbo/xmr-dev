@@ -118,6 +118,9 @@ minethd::minethd(miner_work& pWork, size_t iNo, int iMultiway, bool no_prefetch,
 
 	switch (iMultiway)
 	{
+	case 7:
+		oWorkThd = std::thread(&minethd::seven_work_main, this);
+		break;
 	case 6:
 		oWorkThd = std::thread(&minethd::six_work_main, this);
 		break;
@@ -183,7 +186,7 @@ cryptonight_ctx* minethd::minethd_alloc_ctx()
 	return nullptr; //Should never happen
 }
 
-static constexpr size_t MAX_N = 6;
+static constexpr size_t MAX_N = 7;
 bool minethd::self_test()
 {
 	alloc_msg msg = { 0 };
@@ -500,7 +503,11 @@ minethd::cn_hash_fun_multi minethd::func_multi_selector(size_t N, bool bHaveAes,
 		cryptonight_six_hash<MONERO_MASK, MONERO_ITER, MONERO_MEMORY, false, false>,
 		cryptonight_six_hash<MONERO_MASK, MONERO_ITER, MONERO_MEMORY, false, true>,
 		cryptonight_six_hash<MONERO_MASK, MONERO_ITER, MONERO_MEMORY, true, false>,
-		cryptonight_six_hash<MONERO_MASK, MONERO_ITER, MONERO_MEMORY, true, true>
+		cryptonight_six_hash<MONERO_MASK, MONERO_ITER, MONERO_MEMORY, true, true>,
+		cryptonight_seven_hash<MONERO_MASK, MONERO_ITER, MONERO_MEMORY, false, false>,
+		cryptonight_seven_hash<MONERO_MASK, MONERO_ITER, MONERO_MEMORY, false, true>,
+		cryptonight_seven_hash<MONERO_MASK, MONERO_ITER, MONERO_MEMORY, true, false>,
+		cryptonight_seven_hash<MONERO_MASK, MONERO_ITER, MONERO_MEMORY, true, true>
 #endif
 #if (!defined(CONF_NO_AEON)) && (!defined(CONF_NO_MONERO))
 		// comma will be added only if Monero and Aeon is build
@@ -526,7 +533,11 @@ minethd::cn_hash_fun_multi minethd::func_multi_selector(size_t N, bool bHaveAes,
 		cryptonight_six_hash<AEON_MASK, AEON_ITER, AEON_MEMORY, false, false>,
 		cryptonight_six_hash<AEON_MASK, AEON_ITER, AEON_MEMORY, false, true>,
 		cryptonight_six_hash<AEON_MASK, AEON_ITER, AEON_MEMORY, true, false>,
-		cryptonight_six_hash<AEON_MASK, AEON_ITER, AEON_MEMORY, true, true>
+		cryptonight_six_hash<AEON_MASK, AEON_ITER, AEON_MEMORY, true, true>,
+		cryptonight_seven_hash<AEON_MASK, AEON_ITER, AEON_MEMORY, false, false>,
+		cryptonight_seven_hash<AEON_MASK, AEON_ITER, AEON_MEMORY, false, true>,
+		cryptonight_seven_hash<AEON_MASK, AEON_ITER, AEON_MEMORY, true, false>,
+		cryptonight_seven_hash<AEON_MASK, AEON_ITER, AEON_MEMORY, true, true>
 #endif
 	};
 
@@ -569,6 +580,11 @@ void minethd::penta_work_main()
 void minethd::six_work_main()
 {
 	multiway_work_main<6>(func_multi_selector(6, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero()));
+}
+
+void minethd::seven_work_main()
+{
+	multiway_work_main<7>(func_multi_selector(7, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero()));
 }
 
 template<size_t N>
