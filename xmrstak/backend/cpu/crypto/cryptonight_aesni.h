@@ -805,7 +805,6 @@ void cryptonight_six_hash(const void* input, size_t len, void* output, cryptonig
 		CN_STEP1(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP1(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP1(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP1(ax5, bx5, cx5, l5, ptr5, idx5);
 
 		CN_STEP2(ax0, bx0, cx0, l0, ptr0, idx0);
@@ -813,7 +812,6 @@ void cryptonight_six_hash(const void* input, size_t len, void* output, cryptonig
 		CN_STEP2(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP2(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP2(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP2(ax5, bx5, cx5, l5, ptr5, idx5);
 
 		CN_STEP3(ax0, bx0, cx0, l0, ptr0, idx0);
@@ -821,7 +819,6 @@ void cryptonight_six_hash(const void* input, size_t len, void* output, cryptonig
 		CN_STEP3(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP3(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP3(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP3(ax5, bx5, cx5, l5, ptr5, idx5);
 
 		CN_STEP4(ax0, bx0, cx0, l0, ptr0, idx0);
@@ -829,7 +826,6 @@ void cryptonight_six_hash(const void* input, size_t len, void* output, cryptonig
 		CN_STEP4(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP4(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP4(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP4(ax5, bx5, cx5, l5, ptr5, idx5);
 
 		// ODD ROUND
@@ -838,23 +834,20 @@ void cryptonight_six_hash(const void* input, size_t len, void* output, cryptonig
 		CN_STEP1(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP1(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP1(ax4, cx4, bx4, l4, ptr4, idx4);
-
-		CN_STEP1(ax5, bx5, cx5, l5, ptr5, idx5);
+		CN_STEP1(ax5, cx5, bx5, l5, ptr5, idx5);
 
 		CN_STEP2(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP2(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP2(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP2(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP2(ax4, cx4, bx4, l4, ptr4, idx4);
-
-		CN_STEP2(ax5, bx5, cx5, l5, ptr5, idx5);
+		CN_STEP2(ax5, cx5, bx5, l5, ptr5, idx5);
 
 		CN_STEP3(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP3(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP3(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP3(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP3(ax4, cx4, bx4, l4, ptr4, idx4);
-
 		CN_STEP3(ax5, cx5, bx5, l5, ptr5, idx5);
 
 		CN_STEP4(ax0, cx0, bx0, l0, ptr0, idx0);
@@ -862,7 +855,6 @@ void cryptonight_six_hash(const void* input, size_t len, void* output, cryptonig
 		CN_STEP4(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP4(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP4(ax4, cx4, bx4, l4, ptr4, idx4);
-
 		CN_STEP4(ax5, cx5, bx5, l5, ptr5, idx5);
 	}
 
@@ -940,7 +932,6 @@ void cryptonight_seven_hash(const void* input, size_t len, void* output, crypton
 		CN_STEP1(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP1(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP1(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP1(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP1(ax6, bx6, cx6, l6, ptr6, idx6);
 
@@ -949,7 +940,6 @@ void cryptonight_seven_hash(const void* input, size_t len, void* output, crypton
 		CN_STEP2(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP2(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP2(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP2(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP2(ax6, bx6, cx6, l6, ptr6, idx6);
 
@@ -958,7 +948,6 @@ void cryptonight_seven_hash(const void* input, size_t len, void* output, crypton
 		CN_STEP3(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP3(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP3(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP3(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP3(ax6, bx6, cx6, l6, ptr6, idx6);
 
@@ -967,7 +956,6 @@ void cryptonight_seven_hash(const void* input, size_t len, void* output, crypton
 		CN_STEP4(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP4(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP4(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP4(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP4(ax6, bx6, cx6, l6, ptr6, idx6);
 
@@ -977,36 +965,32 @@ void cryptonight_seven_hash(const void* input, size_t len, void* output, crypton
 		CN_STEP1(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP1(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP1(ax4, cx4, bx4, l4, ptr4, idx4);
-
-		CN_STEP1(ax5, bx5, cx5, l5, ptr5, idx5);
-		CN_STEP1(ax6, bx6, cx6, l6, ptr6, idx6);
+		CN_STEP1(ax5, cx5, bx5, l5, ptr5, idx5);
+		CN_STEP1(ax6, cx6, bx6, l6, ptr6, idx6);
 
 		CN_STEP2(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP2(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP2(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP2(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP2(ax4, cx4, bx4, l4, ptr4, idx4);
-
-		CN_STEP2(ax5, bx5, cx5, l5, ptr5, idx5);
-		CN_STEP2(ax6, bx6, cx6, l6, ptr6, idx6);
+		CN_STEP2(ax5, cx5, bx5, l5, ptr5, idx5);
+		CN_STEP2(ax6, cx6, bx6, l6, ptr6, idx6);
 
 		CN_STEP3(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP3(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP3(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP3(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP3(ax4, cx4, bx4, l4, ptr4, idx4);
-
 		CN_STEP3(ax5, cx5, bx5, l5, ptr5, idx5);
-		CN_STEP3(ax6, bx6, cx6, l6, ptr6, idx6);
+		CN_STEP3(ax6, cx6, bx6, l6, ptr6, idx6);
 
 		CN_STEP4(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP4(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP4(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP4(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP4(ax4, cx4, bx4, l4, ptr4, idx4);
-
 		CN_STEP4(ax5, cx5, bx5, l5, ptr5, idx5);
-		CN_STEP4(ax6, bx6, cx6, l6, ptr6, idx6);
+		CN_STEP4(ax6, cx6, bx6, l6, ptr6, idx6);
 
 	}
 
@@ -1092,7 +1076,6 @@ void cryptonight_eight_hash(const void* input, size_t len, void* output, crypton
 		CN_STEP1(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP1(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP1(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP1(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP1(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP1(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1102,7 +1085,6 @@ void cryptonight_eight_hash(const void* input, size_t len, void* output, crypton
 		CN_STEP2(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP2(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP2(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP2(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP2(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP2(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1112,7 +1094,6 @@ void cryptonight_eight_hash(const void* input, size_t len, void* output, crypton
 		CN_STEP3(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP3(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP3(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP3(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP3(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP3(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1122,7 +1103,6 @@ void cryptonight_eight_hash(const void* input, size_t len, void* output, crypton
 		CN_STEP4(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP4(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP4(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP4(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP4(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP4(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1133,40 +1113,36 @@ void cryptonight_eight_hash(const void* input, size_t len, void* output, crypton
 		CN_STEP1(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP1(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP1(ax4, cx4, bx4, l4, ptr4, idx4);
-
-		CN_STEP1(ax5, bx5, cx5, l5, ptr5, idx5);
-		CN_STEP1(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP1(ax7, bx7, cx7, l7, ptr7, idx7);
+		CN_STEP1(ax5, cx5, bx5, l5, ptr5, idx5);
+		CN_STEP1(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP1(ax7, cx7, bx7, l7, ptr7, idx7);
 
 		CN_STEP2(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP2(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP2(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP2(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP2(ax4, cx4, bx4, l4, ptr4, idx4);
-
-		CN_STEP2(ax5, bx5, cx5, l5, ptr5, idx5);
-		CN_STEP2(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP2(ax7, bx7, cx7, l7, ptr7, idx7);
+		CN_STEP2(ax5, cx5, bx5, l5, ptr5, idx5);
+		CN_STEP2(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP2(ax7, cx7, bx7, l7, ptr7, idx7);
 
 		CN_STEP3(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP3(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP3(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP3(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP3(ax4, cx4, bx4, l4, ptr4, idx4);
-
 		CN_STEP3(ax5, cx5, bx5, l5, ptr5, idx5);
-		CN_STEP3(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP3(ax7, bx7, cx7, l7, ptr7, idx7);
+		CN_STEP3(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP3(ax7, cx7, bx7, l7, ptr7, idx7);
 
 		CN_STEP4(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP4(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP4(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP4(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP4(ax4, cx4, bx4, l4, ptr4, idx4);
-
 		CN_STEP4(ax5, cx5, bx5, l5, ptr5, idx5);
-		CN_STEP4(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP4(ax7, bx7, cx7, l7, ptr7, idx7);
+		CN_STEP4(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP4(ax7, cx7, bx7, l7, ptr7, idx7);
 
 	}
 
@@ -1258,7 +1234,6 @@ void cryptonight_nine_hash(const void* input, size_t len, void* output, cryptoni
 		CN_STEP1(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP1(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP1(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP1(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP1(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP1(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1269,7 +1244,6 @@ void cryptonight_nine_hash(const void* input, size_t len, void* output, cryptoni
 		CN_STEP2(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP2(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP2(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP2(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP2(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP2(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1280,7 +1254,6 @@ void cryptonight_nine_hash(const void* input, size_t len, void* output, cryptoni
 		CN_STEP3(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP3(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP3(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP3(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP3(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP3(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1291,7 +1264,6 @@ void cryptonight_nine_hash(const void* input, size_t len, void* output, cryptoni
 		CN_STEP4(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP4(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP4(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP4(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP4(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP4(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1303,44 +1275,40 @@ void cryptonight_nine_hash(const void* input, size_t len, void* output, cryptoni
 		CN_STEP1(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP1(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP1(ax4, cx4, bx4, l4, ptr4, idx4);
-
-		CN_STEP1(ax5, bx5, cx5, l5, ptr5, idx5);
-		CN_STEP1(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP1(ax7, bx7, cx7, l7, ptr7, idx7);
-		CN_STEP1(ax8, bx8, cx8, l8, ptr8, idx8);
+		CN_STEP1(ax5, cx5, bx5, l5, ptr5, idx5);
+		CN_STEP1(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP1(ax7, cx7, bx7, l7, ptr7, idx7);
+		CN_STEP1(ax8, cx8, bx8, l8, ptr8, idx8);
 
 		CN_STEP2(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP2(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP2(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP2(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP2(ax4, cx4, bx4, l4, ptr4, idx4);
-
-		CN_STEP2(ax5, bx5, cx5, l5, ptr5, idx5);
-		CN_STEP2(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP2(ax7, bx7, cx7, l7, ptr7, idx7);
-		CN_STEP2(ax8, bx8, cx8, l8, ptr8, idx8);
+		CN_STEP2(ax5, cx5, bx5, l5, ptr5, idx5);
+		CN_STEP2(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP2(ax7, cx7, bx7, l7, ptr7, idx7);
+		CN_STEP2(ax8, cx8, bx8, l8, ptr8, idx8);
 
 		CN_STEP3(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP3(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP3(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP3(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP3(ax4, cx4, bx4, l4, ptr4, idx4);
-
 		CN_STEP3(ax5, cx5, bx5, l5, ptr5, idx5);
-		CN_STEP3(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP3(ax7, bx7, cx7, l7, ptr7, idx7);
-		CN_STEP3(ax8, bx8, cx8, l8, ptr8, idx8);
+		CN_STEP3(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP3(ax7, cx7, bx7, l7, ptr7, idx7);
+		CN_STEP3(ax8, cx8, bx8, l8, ptr8, idx8);
 
 		CN_STEP4(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP4(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP4(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP4(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP4(ax4, cx4, bx4, l4, ptr4, idx4);
-
 		CN_STEP4(ax5, cx5, bx5, l5, ptr5, idx5);
-		CN_STEP4(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP4(ax7, bx7, cx7, l7, ptr7, idx7);
-		CN_STEP4(ax8, bx8, cx8, l8, ptr8, idx8);
+		CN_STEP4(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP4(ax7, cx7, bx7, l7, ptr7, idx7);
+		CN_STEP4(ax8, cx8, bx8, l8, ptr8, idx8);
 
 	}
 
@@ -1440,7 +1408,6 @@ void cryptonight_ten_hash(const void* input, size_t len, void* output, cryptonig
 		CN_STEP1(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP1(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP1(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP1(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP1(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP1(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1452,7 +1419,6 @@ void cryptonight_ten_hash(const void* input, size_t len, void* output, cryptonig
 		CN_STEP2(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP2(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP2(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP2(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP2(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP2(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1464,7 +1430,6 @@ void cryptonight_ten_hash(const void* input, size_t len, void* output, cryptonig
 		CN_STEP3(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP3(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP3(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP3(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP3(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP3(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1476,7 +1441,6 @@ void cryptonight_ten_hash(const void* input, size_t len, void* output, cryptonig
 		CN_STEP4(ax2, bx2, cx2, l2, ptr2, idx2);
 		CN_STEP4(ax3, bx3, cx3, l3, ptr3, idx3);
 		CN_STEP4(ax4, bx4, cx4, l4, ptr4, idx4);
-
 		CN_STEP4(ax5, bx5, cx5, l5, ptr5, idx5);
 		CN_STEP4(ax6, bx6, cx6, l6, ptr6, idx6);
 		CN_STEP4(ax7, bx7, cx7, l7, ptr7, idx7);
@@ -1489,48 +1453,44 @@ void cryptonight_ten_hash(const void* input, size_t len, void* output, cryptonig
 		CN_STEP1(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP1(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP1(ax4, cx4, bx4, l4, ptr4, idx4);
-
-		CN_STEP1(ax5, bx5, cx5, l5, ptr5, idx5);
-		CN_STEP1(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP1(ax7, bx7, cx7, l7, ptr7, idx7);
-		CN_STEP1(ax8, bx8, cx8, l8, ptr8, idx8);
-		CN_STEP1(ax9, bx9, cx9, l9, ptr9, idx9);
+		CN_STEP1(ax5, cx5, bx5, l5, ptr5, idx5);
+		CN_STEP1(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP1(ax7, cx7, bx7, l7, ptr7, idx7);
+		CN_STEP1(ax8, cx8, bx8, l8, ptr8, idx8);
+		CN_STEP1(ax9, cx9, bx9, l9, ptr9, idx9);
 
 		CN_STEP2(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP2(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP2(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP2(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP2(ax4, cx4, bx4, l4, ptr4, idx4);
-
-		CN_STEP2(ax5, bx5, cx5, l5, ptr5, idx5);
-		CN_STEP2(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP2(ax7, bx7, cx7, l7, ptr7, idx7);
-		CN_STEP2(ax8, bx8, cx8, l8, ptr8, idx8);
-		CN_STEP2(ax9, bx9, cx9, l9, ptr9, idx9);
+		CN_STEP2(ax5, cx5, bx5, l5, ptr5, idx5);
+		CN_STEP2(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP2(ax7, cx7, bx7, l7, ptr7, idx7);
+		CN_STEP2(ax8, cx8, bx8, l8, ptr8, idx8);
+		CN_STEP2(ax9, cx9, bx9, l9, ptr9, idx9);
 
 		CN_STEP3(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP3(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP3(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP3(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP3(ax4, cx4, bx4, l4, ptr4, idx4);
-
 		CN_STEP3(ax5, cx5, bx5, l5, ptr5, idx5);
-		CN_STEP3(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP3(ax7, bx7, cx7, l7, ptr7, idx7);
-		CN_STEP3(ax8, bx8, cx8, l8, ptr8, idx8);
-		CN_STEP3(ax9, bx9, cx9, l9, ptr9, idx9);
+		CN_STEP3(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP3(ax7, cx7, bx7, l7, ptr7, idx7);
+		CN_STEP3(ax8, cx8, bx8, l8, ptr8, idx8);
+		CN_STEP3(ax9, cx9, bx9, l9, ptr9, idx9);
 
 		CN_STEP4(ax0, cx0, bx0, l0, ptr0, idx0);
 		CN_STEP4(ax1, cx1, bx1, l1, ptr1, idx1);
 		CN_STEP4(ax2, cx2, bx2, l2, ptr2, idx2);
 		CN_STEP4(ax3, cx3, bx3, l3, ptr3, idx3);
 		CN_STEP4(ax4, cx4, bx4, l4, ptr4, idx4);
-
 		CN_STEP4(ax5, cx5, bx5, l5, ptr5, idx5);
-		CN_STEP4(ax6, bx6, cx6, l6, ptr6, idx6);
-		CN_STEP4(ax7, bx7, cx7, l7, ptr7, idx7);
-		CN_STEP4(ax8, bx8, cx8, l8, ptr8, idx8);
-		CN_STEP4(ax9, bx9, cx9, l9, ptr9, idx9);
+		CN_STEP4(ax6, cx6, bx6, l6, ptr6, idx6);
+		CN_STEP4(ax7, cx7, bx7, l7, ptr7, idx7);
+		CN_STEP4(ax8, cx8, bx8, l8, ptr8, idx8);
+		CN_STEP4(ax9, cx9, bx9, l9, ptr9, idx9);
 	}
 
 	for (size_t i = 0; i < 10; i++)
